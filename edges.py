@@ -14,7 +14,6 @@ def automata(rule_number, time, length, first_row='zeros', edges='zeros'):
         print("Enter 'zeros', 'ones' or 'random'")
         sys.exit()
     
-    print(data)
     # #initial row 
     if first_row == 'zeros':
         data[0, 1:length-1] = np.zeros(length - 2, dtype=int)
@@ -27,7 +26,6 @@ def automata(rule_number, time, length, first_row='zeros', edges='zeros'):
     else:
         print("Enter 'zeros', 'ones' or 'random'")
         sys.exit()
-    print(data)
     #subsequent rows
     for row in range(1, time-1):
         for col in range(1, length-1):
